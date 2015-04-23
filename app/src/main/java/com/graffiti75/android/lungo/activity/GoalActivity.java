@@ -47,13 +47,42 @@ public class GoalActivity extends Activity implements View.OnClickListener {
      * Creates the layout.
      */
     public void createLayout() {
+        // Initialize main components.
         mUntilDayButton = (Button)findViewById(R.id.id_until_day_button);
+        mUntilDayButton.setOnClickListener(this);
         mFromDayButton = (Button)findViewById(R.id.id_from_day_button);
+        mFromDayButton.setOnClickListener(this);
+
+        // Other buttons.
         mDayButton = (Button)findViewById(R.id.id_day_button);
         mMonthButton = (Button)findViewById(R.id.id_month_button);
         mYearButton = (Button)findViewById(R.id.id_year_button);
         mCreateGoalButton = (Button)findViewById(R.id.id_create_goal_button);
         mCreateGoalButton.setOnClickListener(this);
+
+        // Set default behavior.
+        setColorUntilDay(true);
+    }
+
+    /**
+     * If is true, we have the default pattern. Else, we change the colors.
+     *
+     * @param value
+     */
+    public void setColorUntilDay(Boolean value) {
+        if (value) {
+            mUntilDayButton.setBackground(getDrawable(R.color.lungo_green));
+            mUntilDayButton.setTextColor(getResources().getColor(R.color.lungo_white));
+
+            mFromDayButton.setBackground(getDrawable(R.color.lungo_white));
+            mFromDayButton.setTextColor(getResources().getColor(android.R.color.black));
+        } else {
+            mUntilDayButton.setBackground(getDrawable(R.color.lungo_white));
+            mUntilDayButton.setTextColor(getResources().getColor(android.R.color.black));
+
+            mFromDayButton.setBackground(getDrawable(R.color.lungo_green));
+            mFromDayButton.setTextColor(getResources().getColor(R.color.lungo_white));
+        }
     }
 
     @Override
@@ -62,6 +91,12 @@ public class GoalActivity extends Activity implements View.OnClickListener {
             case R.id.id_create_goal_button:
                 ActivityUtils.openActivity(this, ViewPagerActivity.class);
                 overridePendingTransition(R.anim.slide_up_from_outside, R.anim.slide_up_to_outside);
+                break;
+            case R.id.id_until_day_button:
+                setColorUntilDay(true);
+                break;
+            case R.id.id_from_day_button:
+                setColorUntilDay(false);
                 break;
         }
     }
