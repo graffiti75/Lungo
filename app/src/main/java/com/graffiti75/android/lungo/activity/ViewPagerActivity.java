@@ -7,6 +7,9 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.graffiti75.android.lungo.R;
 import com.graffiti75.android.lungo.fragment.ControlFragment;
@@ -18,7 +21,7 @@ import com.graffiti75.android.lungo.fragment.StatisticsFragment;
  * @author Rodrigo Cericatto
  * @since March 25, 2015
  */
-public class ViewPagerActivity extends FragmentActivity {
+public class ViewPagerActivity extends FragmentActivity implements View.OnClickListener {
 
     //--------------------------------------------------
     // CONSTANTS
@@ -33,6 +36,11 @@ public class ViewPagerActivity extends FragmentActivity {
     private LungoPagerAdapter mPagesAdapter;
     private ViewPager mViewPager;
 
+    private TextView mControlTitleTextView;
+    private TextView mStatisticsTitleTextView;
+    private ImageView mControlLineImageView;
+    private ImageView mStatisticsLineImageView;
+
     //--------------------------------------------------
     // ACTIVITY LIFE CYCLE
     //--------------------------------------------------
@@ -42,6 +50,7 @@ public class ViewPagerActivity extends FragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_pager);
 
+        setLayout();
         setViewPager();
     }
 
@@ -49,10 +58,58 @@ public class ViewPagerActivity extends FragmentActivity {
     // METHODS
     //--------------------------------------------------
 
+    /**
+     * Sets the {@link ViewPager}.
+     */
     public void setViewPager() {
         mPagesAdapter = new LungoPagerAdapter(this, getSupportFragmentManager());
-        mViewPager = (ViewPager)findViewById(R.id.id_view_pager);
         mViewPager.setAdapter(mPagesAdapter);
+    }
+
+    /**
+     * Sets the view components.
+     */
+    public void setLayout() {
+        // Layout components.
+        mViewPager = (ViewPager) findViewById(R.id.id_view_pager);
+        mControlTitleTextView = (TextView) findViewById(R.id.id_control_title_text_view);
+        mControlTitleTextView.setOnClickListener(this);
+        mStatisticsTitleTextView = (TextView) findViewById(R.id.id_statistics_title_text_view);
+        mStatisticsTitleTextView.setOnClickListener(this);
+        mControlLineImageView = (ImageView) findViewById(R.id.id_control_line_image_view);
+        mControlLineImageView.setOnClickListener(this);
+        mStatisticsLineImageView = (ImageView) findViewById(R.id.id_statistics_line_image_view);
+        mStatisticsLineImageView.setOnClickListener(this);
+    }
+
+    //--------------------------------------------------
+    // Listeners
+    //--------------------------------------------------
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.id_control_title_text_view:
+                mViewPager.setCurrentItem(0);
+                mControlLineImageView.setBackground(getDrawable(R.color.lungo_blue_dark));
+                mStatisticsLineImageView.setBackground(getDrawable(R.color.lungo_green));
+                break;
+            case R.id.id_statistics_title_text_view:
+                mViewPager.setCurrentItem(1);
+                mControlLineImageView.setBackground(getDrawable(R.color.lungo_green));
+                mStatisticsLineImageView.setBackground(getDrawable(R.color.lungo_blue_dark));
+                break;
+            case R.id.id_control_line_image_view:
+                mViewPager.setCurrentItem(0);
+                mControlLineImageView.setBackground(getDrawable(R.color.lungo_blue_dark));
+                mStatisticsLineImageView.setBackground(getDrawable(R.color.lungo_green));
+                break;
+            case R.id.id_statistics_line_image_view:
+                mViewPager.setCurrentItem(1);
+                mControlLineImageView.setBackground(getDrawable(R.color.lungo_green));
+                mStatisticsLineImageView.setBackground(getDrawable(R.color.lungo_blue_dark));
+                break;
+        }
     }
 
     //--------------------------------------------------

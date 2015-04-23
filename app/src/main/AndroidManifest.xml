@@ -23,7 +23,7 @@
 
         <activity
             android:name=".activity.ViewPagerActivity"
-            android:label="@string/view_pager_title" >
+            android:label="@string/fragment_control_title" >
         </activity>
     </application>
 </manifest>
