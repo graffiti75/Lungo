@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="lungo_green">#58CC0D</color>
+    <color name="lungo_green_light">#7AEE2F</color>
     <color name="lungo_gray">#E6E7E8</color>
     <color name="lungo_gray_dark">#6D6E70</color>
     <color name="lungo_blue">#33ACCC</color>
+    <color name="lungo_blue_dark">#115599</color>
     <color name="lungo_white">#FFFFFF</color>
 </resources>

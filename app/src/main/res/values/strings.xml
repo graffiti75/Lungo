@@ -3,6 +3,12 @@
     <string name="app_name">lungo</string>
     <string name="action_settings">Settings</string>
 
+    <!-- MAIN ACTIVITY -->
+    <string name="lungo">LUNGO</string>
+    <string name="stop_smoking">Seu primeiro passo para\nparar de fumar.</string>
+    <string name="start">Comece!</string>
+
+    <!-- GOAL ACTIVITY -->
     <string name="goal">Objetivo</string>
     <string name="create_goal">Crie um objetivo!</string>
     <string name="until_day">Até o dia</string>

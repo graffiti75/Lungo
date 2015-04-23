@@ -1,10 +1,12 @@
-package com.graffiti75.android.lungo;
+package com.graffiti75.android.lungo.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+
+import com.graffiti75.android.lungo.R;
 
 /**
  * GoalActivity.class.
