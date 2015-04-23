@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">lungo</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="goal">Objetivo</string>
+    <string name="create_goal">Crie um objetivo!</string>
+    <string name="until_day">Até o dia</string>
+    <string name="from_day">A partir do dia</string>
+    <string name="day">01</string>
+    <string name="month">JAN</string>
+    <string name="year">2015</string>
+    <string name="stop_smoking">Vou parar de fumar.</string>
+    <string name="creating_goal">CRIAR OBJETIVO</string>
+</resources>

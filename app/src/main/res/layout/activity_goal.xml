@@ -1,0 +1,141 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- TOOLBAR -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/id_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lungo_green"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:textColor="@color/lungo_white"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ic_bar"
+            android:text="@string/goal" />
+    </android.support.v7.widget.Toolbar>
+
+    <!-- BODY -->
+    <LinearLayout
+        android:background="@color/lungo_gray"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_flag_black"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:text="@string/goal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="@string/create_goal" />
+
+        <!-- DAY BUTTONS -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/id_until_day_button"
+                android:layout_width="wrap_content"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:background="@color/lungo_white"
+                android:padding="10dp"
+                android:text="@string/until_day" />
+
+            <Button
+                android:id="@+id/id_from_day_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textSize="16dp"
+                android:background="@color/lungo_green"
+                android:padding="10dp"
+                android:text="@string/from_day" />
+        </LinearLayout>
+
+        <!-- STARTING DAY -->
+        <LinearLayout
+            android:background="@color/lungo_white"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- BUTTONS -->
+            <LinearLayout
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/id_day_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/lungo_blue"
+                    android:textSize="28dp"
+                    android:padding="10dp"
+                    android:text="@string/day" />
+
+                <Button
+                    android:id="@+id/id_month_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="28dp"
+                    android:background="@color/lungo_blue"
+                    android:padding="10dp"
+                    android:text="@string/month" />
+
+                <Button
+                    android:id="@+id/id_year_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="28dp"
+                    android:background="@color/lungo_blue"
+                    android:padding="10dp"
+                    android:text="@string/year" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="22dp"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content"
+                android:text="@string/stop_smoking" />
+        </LinearLayout>
+
+        <!-- GOAL BUTTON -->
+        <Button
+            android:id="@+id/id_create_goal_button"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:background="@drawable/button_behavior"
+            android:textColor="@color/lungo_white"
+            android:text="@string/creating_goal" />
+    </LinearLayout>
+</LinearLayout>
