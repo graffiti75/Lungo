@@ -18,7 +18,7 @@
             android:textColor="@color/lungo_white"
             android:gravity="center"
             android:drawableLeft="@drawable/ic_bar"
-            android:text="@string/goal" />
+            android:text="@string/activity_goal_title" />
     </android.support.v7.widget.Toolbar>
 
     <!-- BODY -->
@@ -35,14 +35,14 @@
             android:drawableLeft="@drawable/ic_flag_black"
             android:gravity="center"
             android:textSize="16dp"
-            android:text="@string/goal" />
+            android:text="@string/activity_goal_title" />
 
         <TextView
             android:layout_width="wrap_content"
             android:textSize="16dp"
             android:layout_marginTop="10dp"
             android:layout_height="wrap_content"
-            android:text="@string/create_goal" />
+            android:text="@string/activity_goal_create_goal" />
 
         <!-- DAY BUTTONS -->
         <LinearLayout
@@ -59,7 +59,7 @@
                 android:layout_height="wrap_content"
                 android:background="@color/lungo_white"
                 android:padding="10dp"
-                android:text="@string/until_day" />
+                android:text="@string/activity_goal_until_day" />
 
             <Button
                 android:id="@+id/id_from_day_button"
@@ -69,7 +69,7 @@
                 android:textSize="16dp"
                 android:background="@color/lungo_green"
                 android:padding="10dp"
-                android:text="@string/from_day" />
+                android:text="@string/activity_goal_from_day" />
         </LinearLayout>
 
         <!-- STARTING DAY -->
@@ -95,7 +95,7 @@
                     android:background="@color/lungo_blue"
                     android:textSize="28dp"
                     android:padding="10dp"
-                    android:text="@string/day" />
+                    android:text="@string/activity_goal_day" />
 
                 <Button
                     android:id="@+id/id_month_button"
@@ -105,7 +105,7 @@
                     android:textSize="28dp"
                     android:background="@color/lungo_blue"
                     android:padding="10dp"
-                    android:text="@string/month" />
+                    android:text="@string/activity_goal_month" />
 
                 <Button
                     android:id="@+id/id_year_button"
@@ -115,7 +115,7 @@
                     android:textSize="28dp"
                     android:background="@color/lungo_blue"
                     android:padding="10dp"
-                    android:text="@string/year" />
+                    android:text="@string/activity_goal_year" />
             </LinearLayout>
 
             <TextView
@@ -124,7 +124,7 @@
                 android:textSize="22dp"
                 android:layout_marginBottom="20dp"
                 android:layout_height="wrap_content"
-                android:text="@string/stop_smoking" />
+                android:text="@string/activity_goal_stop_smoking" />
         </LinearLayout>
 
         <!-- GOAL BUTTON -->
@@ -136,6 +136,6 @@
             android:textSize="24dp"
             android:background="@drawable/button_behavior"
             android:textColor="@color/lungo_white"
-            android:text="@string/creating_goal" />
+            android:text="@string/activity_goal_creating_goal" />
     </LinearLayout>
 </LinearLayout>

@@ -2,11 +2,11 @@ package com.graffiti75.android.lungo.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 
 import com.graffiti75.android.lungo.R;
+import com.graffiti75.android.lungo.utils.ActivityUtils;
 
 /**
  * GoalActivity.class.
@@ -14,7 +14,7 @@ import com.graffiti75.android.lungo.R;
  * @author Rodrigo Cericatto
  * @since March 24, 2015
  */
-public class GoalActivity extends Activity {
+public class GoalActivity extends Activity implements View.OnClickListener {
 
     //--------------------------------------------------
     // ATTRIBUTES
@@ -53,31 +53,16 @@ public class GoalActivity extends Activity {
         mMonthButton = (Button)findViewById(R.id.id_month_button);
         mYearButton = (Button)findViewById(R.id.id_year_button);
         mCreateGoalButton = (Button)findViewById(R.id.id_create_goal_button);
-    }
-
-    //--------------------------------------------------
-    // MENU METHODS
-    //--------------------------------------------------
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
+        mCreateGoalButton.setOnClickListener(this);
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.id_create_goal_button:
+                ActivityUtils.openActivity(this, ViewPagerActivity.class);
+                overridePendingTransition(R.anim.slide_up_from_outside, R.anim.slide_up_to_outside);
+                break;
         }
-
-        return super.onOptionsItemSelected(item);
     }
 }

@@ -9,10 +9,10 @@ import com.graffiti75.android.lungo.R;
 import com.graffiti75.android.lungo.utils.ActivityUtils;
 
 /**
- * GoalActivity.class.
+ * MainActivity.class.
  *
  * @author Rodrigo Cericatto
- * @since March 24, 2015
+ * @since March 25, 2015
  */
 public class MainActivity extends Activity implements View.OnClickListener {
 
@@ -29,7 +29,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_goal);
+        setContentView(R.layout.activity_main);
 
         createLayout();
     }
@@ -43,6 +43,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
      */
     public void createLayout() {
         mStartButton = (Button)findViewById(R.id.id_start_button);
+        mStartButton.setOnClickListener(this);
     }
 
     //--------------------------------------------------

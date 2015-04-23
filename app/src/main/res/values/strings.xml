@@ -1,21 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- APPLICATION -->
     <string name="app_name">lungo</string>
     <string name="action_settings">Settings</string>
 
     <!-- MAIN ACTIVITY -->
-    <string name="lungo">LUNGO</string>
-    <string name="stop_smoking">Seu primeiro passo para\nparar de fumar.</string>
-    <string name="start">Comece!</string>
+    <string name="activity_main_lungo">LUNGO</string>
+    <string name="activity_main_stop_smoking">Seu primeiro passo para\nparar de fumar.</string>
+    <string name="activity_main_start">Comece!</string>
 
     <!-- GOAL ACTIVITY -->
-    <string name="goal">Objetivo</string>
-    <string name="create_goal">Crie um objetivo!</string>
-    <string name="until_day">Até o dia</string>
-    <string name="from_day">A partir do dia</string>
-    <string name="day">01</string>
-    <string name="month">JAN</string>
-    <string name="year">2015</string>
-    <string name="stop_smoking">Vou parar de fumar.</string>
-    <string name="creating_goal">CRIAR OBJETIVO</string>
+    <string name="activity_goal_title">Objetivo</string>
+    <string name="activity_goal_create_goal">Crie um objetivo!</string>
+    <string name="activity_goal_until_day">Até o dia</string>
+    <string name="activity_goal_from_day">A partir do dia</string>
+    <string name="activity_goal_day">01</string>
+    <string name="activity_goal_month">JAN</string>
+    <string name="activity_goal_year">2015</string>
+    <string name="activity_goal_stop_smoking">Vou parar de fumar.</string>
+    <string name="activity_goal_creating_goal">CRIAR OBJETIVO</string>
+
+    <!-- CONTROL FRAGMENT -->
+    <string name="view_pager_title">Controle</string>
+    <string name="fragment_control_statistics">Estatísticas</string>
+    <string name="fragment_control_today_cigarettes">Cigarros fumados\nhoje.</string>
+    <string name="fragment_control_smoking_now">VOU\nFUMAR\nAGORA</string>
 </resources>

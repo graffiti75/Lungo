@@ -10,7 +10,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="140dp"
         android:gravity="center"
-        android:text="@string/lungo"
+        android:text="@string/activity_main_lungo"
         android:textColor="@color/lungo_white"
         android:textSize="80dp"
         android:textStyle="bold" />
@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
-        android:text="@string/stop_smoking"
+        android:text="@string/activity_main_stop_smoking"
         android:textColor="@color/lungo_white"
         android:textSize="20dp"
         android:textStyle="bold" />
@@ -40,7 +40,7 @@
             android:layout_gravity="center"
             android:layout_margin="20dp"
             android:background="@color/lungo_green"
-            android:text="@string/start"
+            android:text="@string/activity_main_start"
             android:textColor="@color/lungo_white"
             android:textSize="18dp"
             android:textStyle="bold" />

@@ -18,7 +18,12 @@
 
         <activity
             android:name=".activity.GoalActivity"
-            android:label="@string/app_name" >
+            android:label="@string/activity_goal_title" >
+        </activity>
+
+        <activity
+            android:name=".activity.ViewPagerActivity"
+            android:label="@string/view_pager_title" >
         </activity>
     </application>
 </manifest>
