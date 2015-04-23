@@ -117,13 +117,13 @@ public class GoalActivity extends Activity implements View.OnClickListener {
                 setColorUntilDay(false);
                 break;
             case R.id.id_day_button:
-                DialogHelper.showDatePickerDialog(this, new DatePickerListener(mDayButton, mMonthButton, mYearButton), day, month, year);
+                DialogHelper.showDatePickerDialog(this, new DatePickerListener(mDayButton, mMonthButton, mYearButton), year, month, day);
                 break;
             case R.id.id_month_button:
-                DialogHelper.showDatePickerDialog(this, new DatePickerListener(mDayButton, mMonthButton, mYearButton), day, month, year);
+                DialogHelper.showDatePickerDialog(this, new DatePickerListener(mDayButton, mMonthButton, mYearButton), year, month, day);
                 break;
             case R.id.id_year_button:
-                DialogHelper.showDatePickerDialog(this, new DatePickerListener(mDayButton, mMonthButton, mYearButton), day, month, year);
+                DialogHelper.showDatePickerDialog(this, new DatePickerListener(mDayButton, mMonthButton, mYearButton), year, month, day);
                 break;
         }
     }
