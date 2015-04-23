@@ -7,4 +7,13 @@
     <color name="lungo_blue">#33ACCC</color>
     <color name="lungo_blue_dark">#115599</color>
     <color name="lungo_white">#FFFFFF</color>
+
+    <color name="lungo_clicked_green">#77BC1F</color>
+    <color name="lungo_clicked_yellow_light">#FFEF57</color>
+    <color name="lungo_clicked_yellow">#FDDE00</color>
+    <color name="lungo_clicked_orange_light">#FEC10D</color>
+    <color name="lungo_clicked_orange">#FF9E15</color>
+    <color name="lungo_clicked_carrot">#FF5F00</color>
+    <color name="lungo_clicked_red_dark">#D12A2E</color>
+    <color name="lungo_clicked_red">#F42434</color>
 </resources>

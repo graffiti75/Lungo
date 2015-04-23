@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <gradient
+        android:startColor="@color/lungo_clicked_yellow"
+        android:centerColor="@color/lungo_clicked_yellow"
+		android:endColor="@color/lungo_clicked_yellow" />
+    
+    <stroke
+        android:width="1px"
+        android:color="@color/lungo_clicked_yellow" />
+</shape>

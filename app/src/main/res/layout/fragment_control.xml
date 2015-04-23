@@ -44,7 +44,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:background="@drawable/rounded_button_behavior"
+            android:background="@drawable/rounded_button_green_behavior"
             android:gravity="center_horizontal"
             android:padding="40dp"
             android:text="@string/fragment_control_smoking_now"
