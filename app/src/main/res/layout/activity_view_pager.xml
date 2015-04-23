@@ -21,12 +21,65 @@
             android:textSize="22dp" />
     </android.support.v7.widget.Toolbar>
 
+    <!-- TITLE -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lungo_green"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/id_control_title_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/fragment_control_title"
+            android:textColor="@color/lungo_white"
+            android:textSize="26dp" />
+
+        <TextView
+            android:id="@+id/id_statistics_title_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/fragment_statistics_title"
+            android:textColor="@color/lungo_white"
+            android:textSize="26dp" />
+    </LinearLayout>
+
+    <!-- TITLE LINE -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ImageView
+            android:id="@+id/id_control_line_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/lungo_blue" />
+
+        <ImageView
+            android:id="@+id/id_statistics_line_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/lungo_gray_dark" />
+    </LinearLayout>
+
     <!-- VIEW PAGER -->
     <android.support.v4.view.ViewPager
         android:id="@+id/id_view_pager"
         android:layout_width="match_parent"
         android:layout_height="0px"
         android:layout_marginTop="-10dp"
-        android:layout_weight="1" >
-    </android.support.v4.view.ViewPager>
+        android:layout_weight="1"></android.support.v4.view.ViewPager>
 </LinearLayout>

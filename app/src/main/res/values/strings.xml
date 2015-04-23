@@ -21,8 +21,14 @@
     <string name="activity_goal_creating_goal">CRIAR OBJETIVO</string>
 
     <!-- CONTROL FRAGMENT -->
-    <string name="view_pager_title">Controle</string>
-    <string name="fragment_control_statistics">Estatísticas</string>
+    <string name="fragment_control_title">Controle</string>
     <string name="fragment_control_today_cigarettes">Cigarros fumados\nhoje.</string>
     <string name="fragment_control_smoking_now">VOU\nFUMAR\nAGORA</string>
+
+    <!-- STATISTICS FRAGMENT -->
+    <string name="fragment_statistics_title">Estatísticas</string>
+    <string name="fragment_statistics_follow_development">Acompanhe seu desenvolvimento!</string>
+    <string name="fragment_statistics_by_day">por dia</string>
+    <string name="fragment_statistics_by_month">por mês</string>
+    <string name="fragment_statistics_by_year">por ano</string>
 </resources>
