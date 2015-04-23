@@ -64,6 +64,36 @@ public class ViewPagerActivity extends FragmentActivity implements View.OnClickL
     public void setViewPager() {
         mPagesAdapter = new LungoPagerAdapter(this, getSupportFragmentManager());
         mViewPager.setAdapter(mPagesAdapter);
+
+        // Attach the page change listener inside the activity.
+        mViewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            // This method will be invoked when a new page becomes selected.
+            @Override
+            public void onPageSelected(int position) {
+                switch (position) {
+                    case 0:
+                        mControlLineImageView.setBackground(getDrawable(R.color.lungo_blue_dark));
+                        mStatisticsLineImageView.setBackground(getDrawable(R.color.lungo_green));
+                        break;
+                    case 1:
+                        mControlLineImageView.setBackground(getDrawable(R.color.lungo_green));
+                        mStatisticsLineImageView.setBackground(getDrawable(R.color.lungo_blue_dark));
+                        break;
+                }
+            }
+
+            // This method will be invoked when the current page is scrolled.
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+                // Code goes here.
+            }
+
+            // Called when the scroll state changes: SCROLL_STATE_IDLE, SCROLL_STATE_DRAGGING, SCROLL_STATE_SETTLING.
+            @Override
+            public void onPageScrollStateChanged(int state) {
+                // Code goes here.
+            }
+        });
     }
 
     /**
@@ -80,6 +110,10 @@ public class ViewPagerActivity extends FragmentActivity implements View.OnClickL
         mControlLineImageView.setOnClickListener(this);
         mStatisticsLineImageView = (ImageView) findViewById(R.id.id_statistics_line_image_view);
         mStatisticsLineImageView.setOnClickListener(this);
+
+        // Sets the default line.
+        mControlLineImageView.setBackground(getDrawable(R.color.lungo_blue_dark));
+        mStatisticsLineImageView.setBackground(getDrawable(R.color.lungo_green));
     }
 
     //--------------------------------------------------
